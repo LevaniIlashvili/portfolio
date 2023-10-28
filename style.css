@@ -1,6 +1,7 @@
 :root {
   --black: #000000;
-  --dark-gray: #333333;
+  --dark-gray: #343a40;
+  --light-gray: #5a656f;
 }
 
 *,
@@ -21,13 +22,16 @@ body {
 }
 
 nav {
-  /* background-color: red; */
+  background-color: white;
+  width: 100vw;
   height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0rem 1rem 5rem 1rem rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
+  position: fixed;
+  z-index: 1000;
 }
 
 .nav__links {
@@ -56,8 +60,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 50rem;
+  height: 56rem;
   padding: 2rem;
+  padding-top: 10rem;
+  margin-bottom: 12rem;
 }
 
 .hero__text-container {
@@ -73,5 +79,26 @@ h1 {
 
 .hero img {
   height: 100%;
-  /* width: 40%; */
+}
+
+.about-section {
+  height: 50rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.about-section__header {
+  font-size: 4rem;
+}
+
+.about-section__text-container {
+  width: 70%;
+}
+
+.about-section__text-container p {
+  color: var(--dark-gray);
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
 }
