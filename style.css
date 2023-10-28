@@ -14,6 +14,8 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -60,10 +62,12 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 56rem;
+  height: 100vh;
   padding: 2rem;
   padding-top: 10rem;
   margin-bottom: 12rem;
+  scroll-snap-align: start;
+  scroll-padding: 10px;
 }
 
 .hero__text-container {
@@ -82,10 +86,12 @@ h1 {
 }
 
 .about-section {
-  height: 50rem;
-  padding: 2rem;
+  height: 100vh;
+  padding: 5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
 }
 
 .about-section__header {
@@ -93,7 +99,7 @@ h1 {
 }
 
 .about-section__text-container {
-  width: 70%;
+  width: 90rem;
 }
 
 .about-section__text-container p {
