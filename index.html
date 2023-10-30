@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <script src="./script.js" defer></script>
-    <title>portfolio</title>
+    <title>Levan Ilashvili</title>
   </head>
   <body>
     <header>
@@ -23,7 +23,7 @@
           <li><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <section class="hero section" id="home">
+      <section class="hero" id="home">
         <div class="hero__text-container">
           <h1>Levani, Front-End Web Developer</h1>
           <p>
@@ -39,7 +39,7 @@
       </section>
     </header>
     <main>
-      <section class="about-section section" id="about">
+      <section class="about-section" id="about">
         <div class="about-section__text-container">
           <h2 class="about-section__header">About</h2>
           <p>
@@ -64,6 +64,64 @@
             enjoyable life outside of coding.
           </p>
         </div>
+      </section>
+      <section class="projects-section" id="projects">
+        <h2 class="projects-section__header">Projects</h2>
+        <article class="project">
+          <img
+            class="project__image"
+            src="./assets/spotify-clone.png"
+            alt="spotify clone"
+          />
+          <div class="project__text-container">
+            <h3>Spotify Clone</h3>
+            <p>
+              The Spotify Clone project closely mimics Spotify's design and
+              essential features, with the exception of certain functionalities
+              not accessible through the Spotify API. It was my most ambitious
+              project completed independently, without the guidance of online
+              courses, and it took me one month to build. During this project, I
+              encountered and overcame several challenges. One of the main
+              difficulties was implementing a music player that allowed users to
+              play, pause, rewind, and skip tracks. Additionally, managing the
+              application's state, handling routing, and dealing with dynamic
+              data were complex tasks. Nevertheless, these challenges provided
+              valuable learning experiences and contributed to my growth as a
+              developer. For this project, I used React for building the user
+              interface and Styled-Components for styling. To manage the global
+              state of the application effectively, I utilized React's
+              useContext and useReducer hooks.
+            </p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__text-container">
+            <h3>Comfy Sloth</h3>
+            <p>
+              The Comfy Sloth is a website that encompasses nearly every feature
+              of a classic e-commerce website. It includes a landing page,
+              products page, authentication, a shopping cart, and a payment
+              gateway. This project provided valuable lessons, as I learned how
+              an e-commerce website operates. The most challenging aspects were
+              implementing the products page with its filtering and sorting
+              functionalities, as well as the shopping cart. However, I managed
+              them successfully by utilizing React and Styled Components for
+              this project. Additionally, I employed useContext and useReducer
+              for managing the global state.
+            </p>
+          </div>
+          <img
+            class="project__image"
+            src="./assets/comfy-sloth.png"
+            alt="comfy sloth"
+          />
+        </article>
+        <span
+          >You can check out all my projects here:
+          <a href="https://github.com/LevaniIlashvili/" target="_blank"
+            >https://github.com/LevaniIlashvili/</a
+          ></span
+        >
       </section>
     </main>
   </body>
