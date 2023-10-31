@@ -47,7 +47,8 @@ nav {
   list-style: none;
 }
 
-.nav__link {
+.nav__link,
+.nav__link:active {
   text-decoration: none;
   color: var(--white);
   font-size: 2rem;
@@ -56,8 +57,7 @@ nav {
   transition: border-bottom 0.1s ease-in;
 }
 
-.nav__link:hover,
-.active {
+.nav__link:hover {
   border-bottom: 3px solid var(--white);
 }
 
