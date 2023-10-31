@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="./script.js" defer></script>
+    <script src="./frontend.js" defer></script>
     <title>Levan Ilashvili</title>
   </head>
   <body>
@@ -116,12 +116,46 @@
             alt="comfy sloth"
           />
         </article>
-        <span
-          >You can check out all my projects here:
+        <span class="github-link-container"
+          ><span>You can check out all my projects here:</span>
           <a href="https://github.com/LevaniIlashvili/" target="_blank"
             >https://github.com/LevaniIlashvili/</a
           ></span
         >
+      </section>
+      <section class="contact-section" id="contact">
+        <h2 class="contact-section__header">Contact</h2>
+        <form
+          action="https://formspree.io/f/mknlewkr"
+          method="POST"
+          class="contact-section__form"
+        >
+          <label for="name-input">Name</label>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            class="form__input"
+            id="name-input"
+            name="name"
+          />
+          <label for="email-input">Email</label>
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            class="form__input"
+            id="email-input"
+            name="email"
+          />
+          <label for="message-input">Your message</label>
+          <textarea
+            id="message-input"
+            cols="30"
+            rows="5"
+            placeholder="Enter Your Message"
+            name="message"
+          ></textarea>
+          <button type="submit" id="send-btn">Send</button>
+        </form>
       </section>
     </main>
   </body>
