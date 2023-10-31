@@ -11,6 +11,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red;
+  outline-offset: -1px; */
 }
 
 html {
@@ -62,7 +64,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
   padding-top: 10rem;
   margin-bottom: 12rem;
@@ -71,7 +73,7 @@ nav {
 }
 
 .hero__text-container {
-  width: 42rem;
+  max-width: 42rem;
 }
 
 h1 {
@@ -82,11 +84,11 @@ h1 {
 }
 
 .hero img {
-  height: 70vh;
+  max-height: 70vh;
 }
 
 .about-section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 5rem;
   display: flex;
   justify-content: center;
@@ -175,7 +177,7 @@ label {
 }
 
 .form__input {
-  width: 30rem;
+  max-width: 30rem;
   height: 4rem;
   font-size: 1.4rem;
   border: none;
@@ -218,7 +220,44 @@ button:active {
   color: var(--black);
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .project__image {
+    width: 90%;
+  }
+
+  .project:nth-child(3) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .project__text-container {
+    min-width: 20rem;
+  }
+
+  .projects-section {
+    padding: 8rem 2rem;
+  }
+
+  .about-section {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .project__image {
+    width: 100%;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1360px) {
   .project__image {
     width: 80%;
   }
