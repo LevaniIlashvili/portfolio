@@ -56,7 +56,8 @@ nav {
   transition: border-bottom 0.1s ease-in;
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.active {
   border-bottom: 3px solid var(--white);
 }
 
@@ -88,8 +89,8 @@ h1 {
 }
 
 .about-section {
-  min-height: 100vh;
-  padding: 5rem;
+  min-height: 105vh;
+  padding: 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
