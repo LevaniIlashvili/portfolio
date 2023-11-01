@@ -5,6 +5,34 @@
   --white: #fafafa;
 }
 
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+}
+
 *,
 *::after,
 *::before {
