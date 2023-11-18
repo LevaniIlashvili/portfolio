@@ -1,3 +1,3 @@
-link: https://levan-ilashvili.netlify.app/
+link: https://levanilashvili.me/
 
 followed best practices to get perfect score in lighthouse.
